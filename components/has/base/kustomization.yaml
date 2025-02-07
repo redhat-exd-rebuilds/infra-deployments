@@ -17,7 +17,7 @@ images:
 
 configMapGenerator:
   - literals:
-      - GITHUB_ORG=""
+      - GITHUB_ORG=konflux-testing
     name: github-config
     behavior: replace
   - literals:
