@@ -6,9 +6,9 @@ resources:
   - https://github.com/konflux-ci/mintmaker/config/renovate?ref=72ebbd39381341ab341d39ef28e3759f680fa7f6
 
 images:
-  - name: quay.io/konflux-ci/mintmaker
+  - name: quay.io/rh_ee_mfoganho/mintmaker
     newName: quay.io/rh_ee_mfoganho/mintmaker 
-    newTag: latest
+    newTag: sha256:e6e3dea1299ff2543899ecea62d775d3c5106f942411b594d7925e567460e2d5
 
 namespace: mintmaker
 
