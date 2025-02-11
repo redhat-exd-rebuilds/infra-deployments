@@ -8,7 +8,7 @@ resources:
 images:
   - name: quay.io/konflux-ci/mintmaker
     newName: quay.io/rh_ee_mfoganho/mintmaker 
-    newTag: '@sha256:e6e3dea1299ff2543899ecea62d775d3c5106f942411b594d7925e567460e2d5'
+    newTag: '1'
 
 namespace: mintmaker
 
