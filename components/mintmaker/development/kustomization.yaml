@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
   - ../base
   - https://github.com/konflux-ci/mintmaker/config/default?ref=f80081cd0cdfb65ed4b54d045b6fd1113e69754d
-  - https://github.com/querti/mintmaker/config/renovate?ref=f80081cd0cdfb65ed4b54d045b6fd1113e69754d
+  - https://github.com/querti/mintmaker/config/renovate?ref=6a12024a23521226e10c3ebc4c41697db5850e57
 
 images:
   - name: quay.io/konflux-ci/mintmaker
