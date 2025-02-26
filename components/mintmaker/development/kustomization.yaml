@@ -8,7 +8,7 @@ resources:
 images:
   - name: quay.io/konflux-ci/mintmaker
     newName: quay.io/lgallovi-test/mintmaker-test
-    newTag: "4"
+    newTag: missing
 
 namespace: mintmaker
 
