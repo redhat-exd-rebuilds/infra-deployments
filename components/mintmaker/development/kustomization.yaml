@@ -2,13 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../base
-  - https://github.com/querti/mintmaker/config/default?ref=b13199b9f6a050c71adc19b00f01eee3d843a84d
-  - https://github.com/querti/mintmaker/config/renovate?ref=b13199b9f6a050c71adc19b00f01eee3d843a84d
+  - https://github.com/querti/mintmaker/config/default?ref=d0807e6dc27eff88bf06f849b62af7b7f5352545
+  - https://github.com/querti/mintmaker/config/renovate?ref=d0807e6dc27eff88bf06f849b62af7b7f5352545
 
 images:
   - name: quay.io/konflux-ci/mintmaker
     newName: quay.io/lgallovi-test/mintmaker-test
-    newTag: rpm-login25
+    newTag: rpm-login26
   - name: quay.io/konflux-ci/mintmaker-renovate-image
     newName: quay.io/lgallovi-test/mintmaker-renovate-image-test
     newTag: propagate-env
