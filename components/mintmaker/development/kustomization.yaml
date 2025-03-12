@@ -10,8 +10,8 @@ images:
     newName: quay.io/lgallovi-test/mintmaker-test
     newTag: rpm-login25
   - name: quay.io/konflux-ci/mintmaker-renovate-image
-    newName: quay.io/konflux-ci/mintmaker-renovate-image
-    newTag: 49ef435c2b45f0be4545f4af48824eae5fa840a6
+    newName: quay.io/lgallovi-test/mintmaker-renovate-image-test
+    newTag: propagate-env
 
 namespace: mintmaker
 
