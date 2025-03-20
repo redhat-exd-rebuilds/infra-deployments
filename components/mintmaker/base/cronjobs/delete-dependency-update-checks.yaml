@@ -64,6 +64,6 @@ spec:
                   - ALL
                 readOnlyRootFilesystem: true
                 runAsNonRoot: true
-                runAsUser: 1001120000
+                runAsUser: 123456
                 seccompProfile:
                   type: RuntimeDefault

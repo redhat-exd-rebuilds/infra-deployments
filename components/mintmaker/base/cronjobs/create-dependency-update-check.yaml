@@ -4,7 +4,7 @@ metadata:
   name: create-dependencyupdatecheck
   namespace: mintmaker
 spec:
-  schedule: "0 */4 * * *" # every 4 hours
+  schedule: "5 9 * * *" # every 4 hours
   jobTemplate:
     spec:
       template:
@@ -38,6 +38,6 @@ spec:
                   cpu: 100m
                   memory: 100Mi
               securityContext:
-                runAsUser: 1001120000
+                runAsUser: 123456
                 runAsNonRoot: true
                 readOnlyRootFilesystem: true
