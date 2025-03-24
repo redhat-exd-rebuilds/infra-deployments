@@ -4,4 +4,4 @@
   value: https://github.com/redhat-exd-rebuilds/infra-deployments.git
 - op: replace
   path: /spec/source/targetRevision
-  value: preview-mintmaker
+  value: qixiang-test
