@@ -7,8 +7,8 @@ resources:
 
 images:
   - name: quay.io/konflux-ci/mintmaker
-    newName: quay.io/qixiang/mintmaker
-    newTag: 7a086aaca4172fb403c13fabc5670a2d7a5db3db
+    newName: quay.io/lgallovi-test/mintmaker-test
+    newTag: cache-test
 
 namespace: mintmaker
 
