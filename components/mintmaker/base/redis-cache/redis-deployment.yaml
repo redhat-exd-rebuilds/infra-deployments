@@ -16,6 +16,8 @@ spec:
         app: redis
     spec:
       serviceAccountName: mintmaker-controller-manager
+      securityContext:
+        fsGroup: 1001
       containers:
         - name: redis
           image: registry.redhat.io/rhel9/redis-7:9.5
