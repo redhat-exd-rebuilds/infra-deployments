@@ -165,6 +165,8 @@ spec:
         - '{__name__="node_memory_MemTotal_bytes"}'
         - '{__name__="node_memory_MemAvailable_bytes"}'
         - '{__name__="platform:hypershift_hostedclusters:max"}'
+        - '{__name__="mintmaker_availability", namespace="mintmaker"}'
+        - '{__name__="certwatcher_read_certificate_errors_total", namespace="mintmaker"}'
 
     relabelings:
     # override the target's address by the prometheus-k8s service name.
