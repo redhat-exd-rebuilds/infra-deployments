@@ -2,13 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ../base
-  - https://github.com/konflux-ci/mintmaker/config/default?ref=40de97471912fbbfd578ed493f89a99341e01760
-  - https://github.com/konflux-ci/mintmaker/config/renovate?ref=40de97471912fbbfd578ed493f89a99341e01760
+  - https://github.com/konflux-ci/mintmaker/config/default?ref=74f0afef5157cdb7bce03e63efb793fece700af6
+  - https://github.com/konflux-ci/mintmaker/config/renovate?ref=74f0afef5157cdb7bce03e63efb793fece700af6
 
 images:
   - name: quay.io/konflux-ci/mintmaker
-    newName: quay.io/rhn_support_lnovotna/mintmaker
-    newTag: latest
+    newName: quay.io/konflux-ci/mintmaker
+    newTag: 74f0afef5157cdb7bce03e63efb793fece700af6
 
 namespace: mintmaker
 
@@ -17,3 +17,12 @@ commonAnnotations:
 
 components:
   - ../components/rh-certs
+
+patches:
+- target:
+    kind: Deployment
+    name: mintmaker-controller-manager
+  patch: |-
+    - op: replace
+      path: /spec/template/metadata/annotations/mintmaker.appstudio.redhat.com~1renovate-image
+      value: "quay.io/lgallovi-test/mintmaker-renovate-image-test:update-test"
